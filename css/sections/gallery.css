@@ -1,0 +1,24 @@
+/* Start Gallery */
+.gallery {
+    background-color: red;
+    align-content: center;
+}
+.gallery .images {
+    grid-template-columns: repeat(4, 1fr);
+}
+.gallery img {
+    width: 100%;
+}
+/* End Gallery */
+/* Start responsive */
+@media (max-width: 767px) {
+    .gallery .images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 375px) {
+    .gallery .images {
+        grid-template-columns: 1fr;
+    }
+}
+/* End responsive */
